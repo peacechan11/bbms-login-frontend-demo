@@ -1,0 +1,64 @@
+<html>
+<head>
+<app-header></app-header>
+</head>
+<body>
+<section class="vh-120" style="background-color: #406595;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 mt-5 mb-5">
+
+              <div class="d-flex flex-column justify-content-center" style="height:100%">
+                <img src="./assets/images/dat.png"
+                     alt="login form" class="img-fluid d-block mx-auto animate__animated animate__heartBeat" style="border-radius: 1rem 0 0 1rem;"/>
+
+                <span class="h3 fw-bold text-color d-block mx-auto" style="z-index: 1;">DIR ACE Technology</span>
+
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center order-md-first">
+              <div class="card-body p-4 p-lg-5 text-color">
+
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <span class="h1 fw-bold text-color">Bulletin Board System</span>
+                  </div>
+
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign up your account</h5>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" >Name</label>
+
+                    <input type="text"  class="form-control form-control-lg" formControlName="name" />
+                  </div>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" >Email address</label>
+                    <input type="email"  class="form-control form-control-lg" formControlName="email" />
+
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label">Password</label>
+                    <input type="password"  class="form-control form-control-lg" formControlName="password" />
+
+                  </div>
+
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-color btn-lg btn-block" type="submit">Sign Up</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+</html>
